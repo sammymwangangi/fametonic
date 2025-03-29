@@ -6,9 +6,9 @@ import {ChevronRight} from "lucide-react"
 
 export default function HeroSection() {
   return (
-    <div className="relative min-h-[700px] overflow-hidden px-4 sm:px-6 md:px-8 lg:px-12 py-8 md:py-12">
+    <div className="relative min-h-[700px] overflow-hidden px-5 sm:px-6 md:px-8 lg:px-12 py-8 md:py-12">
       {/* Container for better mobile layout */}
-      <div className="flex flex-col-reverse md:flex-row items-center justify-between max-w-7xl mx-auto">
+      <div className="flex flex-col-reverse md:flex-row items-center md:items-start justify-between max-w-7xl mx-auto">
         {/* Left Column */}
         <div className="w-[350px] md:w-[516px] z-20 md:pr-4 lg:pr-8 mb-12 md:mb-0">
           <h1 className="font-urbanist font-bold text-[25px] md:text-[35px] text-center md:text-left text-white tracking-tight">
@@ -36,9 +36,13 @@ export default function HeroSection() {
           </div>
 
           <div className="flex flex-col items-center md:items-start gap-2">
-            <div className="flex flex-col items-center gap-2 w-full md:w-auto">
+            {/* Mobile layout: Terms first, then Copyright, then Button */}
+            {/* Desktop layout: Button first, then Terms and Copyright */}
+            
+            {/* Button and quiz text - first on desktop, third on mobile */}
+            <div className="flex flex-col items-center gap-2 w-full md:w-auto order-3 md:order-1 mb-0 md:mb-6">
               <Link href="#" className="w-full sm:w-auto">
-                <div className="bg-[#FC004E] hover:bg-[#FC004E]/90 text-white font-figtree font-bold text-[18px] md:text-[20px] px-6 md:px-8 py-3 md:py-4 rounded-[10px] flex justify-center items-center shadow-[2px_2px_10px_0px_#00E7F9] transition-all hover:shadow-[0_0_20px_rgba(252,0,78,0.8)] w-full sm:w-[313px]">
+                <div className="bg-[#FC004E] hover:bg-[#FC004E]/90 text-white font-figtree font-bold text-[18px] md:text-[20px] px-6 md:px-8 py-2 rounded-[10px] flex justify-center items-center shadow-[2px_2px_10px_0px_#00E7F9] transition-all hover:shadow-[0_0_20px_rgba(252,0,78,0.8)] w-full sm:w-[313px]">
                   GET STARTED
                   <ChevronRight className="ml-2" />
                 </div>
@@ -47,10 +51,14 @@ export default function HeroSection() {
                 1-minute quiz for personalized insights
               </p>
             </div>
-            <p className="font-figtree font-medium text-[12px] text-[#ABABAB] text-center md:text-left mt-2 max-w-[400px]">
+
+            {/* Terms & Conditions text - first on mobile, second on desktop */}
+            <p className="font-figtree font-medium text-[12px] text-[#ABABAB] text-center md:text-left mt-2 max-w-[400px] order-1 md:order-2">
               By clicking "Get Started", you agree with Terms and Conditions, Privacy Policy, Subscription Terms
             </p>
-            <p className="font-figtree font-medium text-[10px] text-[#ABABAB] mt-2 md:mt-4">
+
+            {/* Copyright notice - second on mobile, third on desktop */}
+            <p className="font-figtree font-medium text-[10px] text-[#ABABAB] mt-2 mb-6 md:mt-1 md:mb-0 order-2 md:order-3">
               Fametonic 2025 ©All Rights Reserved.
             </p>
           </div>
