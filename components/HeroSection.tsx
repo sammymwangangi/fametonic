@@ -31,17 +31,17 @@ export default function HeroSection() {
         {/* Content container */}
         <div className="flex flex-col md:flex-row">
           {/* Left Column */}
-          <div className="w-[350px] md:w-[530px] z-30 md:pr-4 lg:pr-8 mb-12 md:mb-0 relative pt-[300px] sm:pt-[420px] md:pt-0"> 
-            <h1 className={`${urbanist.className} font-bold text-[25px] md:text-[35px] text-center md:text-left text-white tracking-tight`}>
+          <div className="w-[350px] md:w-[530px] z-30 md:pr-4 lg:pr-8 mb-12 md:mb-0 absolute left-[30px] md:left-[120px] pt-[300px] sm:pt-[420px] md:pt-0"> 
+            <h1 className={`${urbanist.className} font-bold text-[25px] md:text-[35px] text-center md:text-left text-white tracking-tight leading-10`}>
               Want to Turn Social Media Into a Profitable Career?
             </h1>
-            <h2 className={`${urbanist.className} font-bold text-[25px] md:text-[35px] text-center md:text-left mb-6 md:mb-8 tracking-tight`}>
+            <h2 className={`${urbanist.className} font-bold text-[25px] md:text-[35px] text-center md:text-left mb-2 md:mb-4 tracking-tight`}>
               <span className="text-[#00E7F9] [text-shadow:0px_4px_4px_#FC004E]">Discover your way to success
                 <span className="hidden sm:inline"><br /></span> with Fametonic:</span>
             </h2>
 
             {/* Features */}
-            <div className="space-y-3 md:space-y-4 mb-6 md:mb-8">
+            <div className="space-y-3 md:space-y-[13px] mb-6 md:mb-[30px]">
               {[
                 "Start growing your influence right away—no waiting required!",
                 "Create viral TikToks and Reels step by step with easy-to-follow lessons",
@@ -63,7 +63,7 @@ export default function HeroSection() {
                 <Link href="#" className="w-full sm:w-auto">
                   <div className="bg-[#FC004E] hover:bg-[#FC004E]/90 text-white font-figtree font-bold text-[18px] md:text-[20px] px-6 md:px-8 py-2 rounded-[10px] flex justify-center items-center shadow-[2px_2px_10px_0px_#00E7F9] transition-all hover:shadow-[0_0_20px_rgba(252,0,78,0.8)] w-full sm:w-[313px]">
                     GET STARTED
-                    <ChevronRight className="ml-2" />
+                    <ChevronRight className="ml-1" />
                   </div>
                 </Link>
                 <p className="font-figtree font-normal text-[12px] text-white text-center mt-1">
@@ -84,8 +84,8 @@ export default function HeroSection() {
           </div>
 
           {/* Right Column with mockup image - desktop */}
-          <div className="hidden md:flex md:absolute md:top-[-70px] md:right-[-40px] lg:right-[-20px] md:w-auto md:justify-end z-10">
-            <div className="relative w-[660px] h-[679px] lg:w-[700px] lg:h-[720px]">
+          <div className="hidden md:flex md:absolute md:top-[-70px] md:right-[-40px] lg:right-[0px] md:w-auto md:justify-end z-10">
+            <div className="relative w-[390px] h-[426px] md:w-[660px] md:h-[679px]  lg:w-[700px] lg:h-[720px]">
               <Image
                 src={Mockup}
                 alt="Mobile App Preview"

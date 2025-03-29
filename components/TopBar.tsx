@@ -5,7 +5,7 @@ import Image from "next/image"
 
 export default function TopBar() {
   return (
-    <Button asChild className="bg-gradient-to-r from-[#FC004E] to-[#10CBE0] min-h-[76px] md:h-[46px] w-full rounded-none mb-4 sm:mb-6 md:mb-9 py-2 md:py-4">
+    <Button asChild className="bg-gradient-to-r from-[#FC004E] to-[#10CBE0] min-h-[76px] md:h-[46px] w-full rounded-none mb-4 sm:mb-6 md:mb-[25px] py-2 md:py-0">
       <Link href="#" className="flex flex-col md:flex-row items-center justify-center md:gap-2 text-[14px] sm:text-[16px] md:text-[22px] font-figtree px-4">
         <div className="flex items-center justify-center gap-1 md:gap-2">
           <span>

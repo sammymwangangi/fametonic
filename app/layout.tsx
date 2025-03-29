@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${figtree.className} antialiased bg-[#010101] p-0 relative`}
+        className={`${figtree.className} antialiased bg-[#010101] p-0 relative overflow-auto`}
       >
         {children} 
       </body>

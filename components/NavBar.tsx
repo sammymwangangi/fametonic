@@ -16,7 +16,7 @@ export default function NavBar() {
 
   return (
     <nav className="relative w-full px-4 sm:px-6 md:px-8 lg:px-12 py-4 md:py-6 z-30">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         {/* Mobile navbar with centered logo */}
         <div className="flex items-center justify-between bg-transparent md:hidden">
           {/* Empty div for layout balance */}
@@ -45,19 +45,19 @@ export default function NavBar() {
         </div>
 
         {/* Desktop navbar */}
-        <div className="hidden md:flex items-center justify-between">
+        <div className="hidden md:flex items-center justify-between md:pl-14 pr-24">
           {/* Logo */}
           <Image 
             src={Logo} 
             alt="Logo" 
             width={169} 
             height={72} 
-            className="w-auto h-[72px] lg:h-[74px] object-cover" 
+            className="w-auto h-[72px] lg:h-[74px] object-contain" 
             priority 
           />
 
           {/* Navigation links */}
-          <div className="flex items-center gap-8 pr-25">
+          <div className="flex items-center gap-8">
             {navLinks.map((link) => (
               <Link 
                 key={link.label} 
