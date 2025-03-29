@@ -1,17 +1,11 @@
 import type { Metadata } from "next";
 import { Figtree } from "next/font/google";
-import { Urbanist } from "next/font/google";
 import "./globals.css";
 
 const figtree = Figtree({
-  variable: "--font-figtree",
   subsets: ["latin"],
 });
 
-const urbanist = Urbanist({
-  variable: "--font-urbanist",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Fame Tonic",
@@ -26,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${figtree.variable} ${urbanist.variable} antialiased bg-[#010101] p-0 relative overflow-auto`}
+        className={`${figtree.className} antialiased bg-[#010101] p-0 relative`}
       >
         {children} 
       </body>

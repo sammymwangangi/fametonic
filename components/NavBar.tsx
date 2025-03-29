@@ -27,9 +27,9 @@ export default function NavBar() {
             <Image 
               src={Logo} 
               alt="Logo" 
-              width={120} 
-              height={52} 
-              className="w-auto h-[40px] sm:h-[52px]" 
+              width={105} 
+              height={44} 
+              className="w-auto h-[40px] sm:h-[52px] object-cover" 
               priority 
             />
           </div>
@@ -50,14 +50,14 @@ export default function NavBar() {
           <Image 
             src={Logo} 
             alt="Logo" 
-            width={120} 
-            height={52} 
-            className="w-auto h-[64px] lg:h-[74px]" 
+            width={169} 
+            height={72} 
+            className="w-auto h-[72px] lg:h-[74px] object-cover" 
             priority 
           />
 
           {/* Navigation links */}
-          <div className="flex items-center gap-8">
+          <div className="flex items-center gap-8 pr-25">
             {navLinks.map((link) => (
               <Link 
                 key={link.label} 
