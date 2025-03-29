@@ -29,9 +29,9 @@ export default function HeroSection() {
         </div>
 
         {/* Content container */}
-        <div className="flex flex-col md:flex-row">
+        <div className="flex flex-col md:flex-row md:justify-end">
           {/* Left Column */}
-          <div className="w-[350px] md:w-[530px] z-30 md:pr-4 lg:pr-8 mb-12 md:mb-0 absolute left-[30px] md:left-[120px] pt-[300px] sm:pt-[420px] md:pt-0"> 
+          <div className="w-[350px] md:w-[530px] z-30 mb-12 md:mb-0 pt-[300px] sm:pt-[420px] md:pt-0 md:mr-[15%] lg:mr-[49%]"> 
             <h1 className={`${urbanist.className} font-bold text-[25px] md:text-[35px] text-center md:text-left text-white tracking-tight leading-10`}>
               Want to Turn Social Media Into a Profitable Career?
             </h1>
@@ -84,8 +84,8 @@ export default function HeroSection() {
           </div>
 
           {/* Right Column with mockup image - desktop */}
-          <div className="hidden md:flex md:absolute md:top-[-70px] md:right-[-40px] lg:right-[0px] md:w-auto md:justify-end z-10">
-            <div className="relative w-[390px] h-[426px] md:w-[660px] md:h-[679px]  lg:w-[700px] lg:h-[720px]">
+          <div className="hidden md:block md:absolute md:top-[-70px] md:right-[-40px] lg:right-[0px] z-10">
+            <div className="relative w-[390px] h-[426px] md:w-[660px] md:h-[679px] lg:w-[700px] lg:h-[720px]">
               <Image
                 src={Mockup}
                 alt="Mobile App Preview"

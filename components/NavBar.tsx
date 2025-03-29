@@ -17,7 +17,7 @@ export default function NavBar() {
   return (
     <nav className="relative w-full px-4 sm:px-6 md:px-8 lg:px-12 py-4 md:py-6 z-30">
       <div className="max-w-6xl mx-auto">
-        {/* Mobile navbar with centered logo */}
+        {/* Mobile navbar */}
         <div className="flex items-center justify-between bg-transparent md:hidden">
           {/* Empty div for layout balance */}
           <div className="w-6 bg-transparent"></div>

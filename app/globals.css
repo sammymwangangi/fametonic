@@ -10,7 +10,6 @@
     --yellow-accent: #FBDD3B;
   }
   
-  /* Set Figtree as default font for all elements */
   html, body {
     font-family: 'Figtree', sans-serif;
   }
