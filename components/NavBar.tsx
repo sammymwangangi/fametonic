@@ -18,9 +18,9 @@ export default function NavBar() {
     <nav className="relative w-full px-4 sm:px-6 md:px-8 lg:px-12 py-4 md:py-6 z-30">
       <div className="max-w-7xl mx-auto">
         {/* Mobile navbar with centered logo */}
-        <div className="flex items-center justify-between md:hidden">
+        <div className="flex items-center justify-between bg-transparent md:hidden">
           {/* Empty div for layout balance */}
-          <div className="w-6"></div>
+          <div className="w-6 bg-transparent"></div>
 
           {/* Centered logo */}
           <div className="flex-1 flex justify-center">
@@ -46,7 +46,7 @@ export default function NavBar() {
 
         {/* Desktop navbar */}
         <div className="hidden md:flex items-center justify-between">
-          {/* Logo - left aligned on desktop */}
+          {/* Logo */}
           <Image 
             src={Logo} 
             alt="Logo" 
