@@ -32,7 +32,7 @@ export default function HeroSection() {
         <div className="flex flex-col md:flex-row md:justify-end">
           {/* Left Column */}
           <div className="w-[350px] md:w-[530px] z-30 mb-12 md:mb-0 pt-[300px] sm:pt-[420px] md:pt-0 mr-0 md:mr-[15%] lg:mr-[49%] px-2 md:px-0"> 
-            <h1 className={`${urbanist.className} text-shadow-white text-shadow-lg/100 font-bold text-[25px] md:text-[35px] text-center md:text-left text-white tracking-tight leading-10`}>
+            <h1 className={`${urbanist.className} font-bold text-[25px] md:text-[35px] text-center md:text-left text-white tracking-tight leading-10`}>
               Want to Turn Social Media Into a Profitable Career?
             </h1>
             <h2 className={`${urbanist.className} font-bold text-[25px] md:text-[35px] text-center md:text-left mb-2 md:mb-4 tracking-tight`}>
