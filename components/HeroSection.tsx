@@ -21,7 +21,7 @@ export default function HeroSection() {
               src={Mockup}
               alt="Mobile App Preview"
               fill
-              className="object-contain"
+              className="object-contain mask-l-from-90% mask-y-from-80% mask-radial-from-70% mask-radial-to-85%"
               priority
               quality={100}
             />
