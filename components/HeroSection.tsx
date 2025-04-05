@@ -36,7 +36,7 @@ export default function HeroSection() {
               Want to Turn Social Media Into a Profitable Career?
             </h1>
             <h2 className={`${urbanist.className} font-bold text-[25px] md:text-[35px] text-center md:text-left mb-2 md:mb-4 tracking-tight`}>
-              <span className="text-[#00E7F9] [text-shadow:0px_4px_4px_#FC004E]">Discover your way to success
+              <span className="text-[#00E7F9] text-shadow-[0px_4px_4px_#FC004E]">Discover your way to success
                 <span className="hidden sm:inline"><br /></span> with Fametonic:</span>
             </h2>
 
