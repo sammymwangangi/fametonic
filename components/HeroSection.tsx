@@ -85,12 +85,12 @@ export default function HeroSection() {
 
           {/* Right Column with mockup image - desktop */}
           <div className="hidden md:block md:absolute md:top-[-70px] md:right-[-40px] lg:right-[0px] z-10">
-            <div className="relative w-[390px] h-[426px] md:w-[660px] md:h-[679px] lg:w-[700px] lg:h-[720px] mask-l-from-50% mask-l-to-90%">
+            <div className="relative w-[390px] h-[426px] md:w-[660px] md:h-[679px] lg:w-[700px] lg:h-[720px]">
               <Image
                 src={Mockup}
                 alt="Mobile App Preview"
                 fill
-                className="object-cover mask-l-from-50% mask-l-to-90%"
+                className="object-cover mask-l-from-80% mask-y-from-80% mask-radial-from-70% mask-radial-to-85%"
                 priority
                 quality={100}
               />
